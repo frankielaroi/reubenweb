@@ -4,8 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReubeTrade Commodities Ltd</title>
+    <meta name="description"
+        content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+    <meta name="keywords"
+        content="commodities trading, agricultural commodities, metals trading, minerals, energy trading, industrial goods, international trade, trade financing, procurement services">
+    <meta name="author" content="ReubeTrade Commodities Ltd">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.reubetrade.com">
+    <title>ReubeTrade Commodities Ltd | Global Trade Excellence in Commodities</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ReubeTrade Commodities Ltd | Global Trade Excellence">
+    <meta property="og:description"
+        content="Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+    <meta property="og:image" content="./assests/images/whitesugar.jpeg">
+    <meta property="og:url" content="https://www.reubetrade.com">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ReubeTrade Commodities Ltd | Global Trade Excellence">
+    <meta name="twitter:description" content="Your trusted partner in international commodities trading">
     <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
@@ -19,9 +37,18 @@
         }
 
         .hero-section {
-            background-color: var(--primary-blue);
-            padding: 120px 0 80px;
-            color: white;
+            background: url('./assests/images/whitesugar.jpeg');
+            min-height: 100vh;
+            width: 100%;
+            color: var(--primary-blue);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -56px;
         }
 
         .feature-icon {
@@ -39,12 +66,18 @@
 
         .product-card,
         .service-card {
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         .product-card:hover,
         .service-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover,
+        .service-card:hover {
+            transform: translateY(-10px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -68,6 +101,8 @@
             height: 150px;
             object-fit: cover;
         }
+
+       
     </style>
 </head>
 
@@ -75,8 +110,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ReubeTrade</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" aria-label="ReubeTrade Home">ReubeTrade</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -103,8 +139,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 mb-4">Global Trade Excellence</h1>
+        <div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="display-4 mb-4">Global Trade Excellence in Commodities</h1>
             <p class="lead mb-4">Your trusted partner in international commodities trading</p>
             <button class="btn btn-custom btn-lg">Get Started</button>
         </div>
@@ -113,40 +149,47 @@
     <!-- Products Section -->
     <section id="products" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Our Product Categories</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up">Our Product Categories</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <!-- Agricultural Products -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 product-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Agricultural Commodities"
+                        <img src="/assests/images/yellowcorn2.jpeg" alt="Premium Agricultural Commodities Trading"
                             class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Agricultural Commodities</h3>
-                            <p class="card-text">Quality agricultural products including cashew nuts, rice, and more.
-                            </p>
+                            <p class="card-text">Premium quality agricultural products including cashew nuts, rice, and
+                                more.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Metals and Minerals -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 product-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Metals and Minerals" class="card-img-top">
+                        <img src="/assests/images/goldbar.jpeg" alt="Global Metals and Minerals Trading"
+                            class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Metals and Minerals</h3>
                             <p class="card-text">Premium metals and minerals sourced from trusted global suppliers.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Energy Sources -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 product-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Energy Sources" class="card-img-top">
+                        <img src="/assests/images/oil.jpeg" alt="International Energy Sources Trading"
+                            class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Energy Sources</h3>
                             <p class="card-text">Reliable energy products including crude oil, LNG, and petroleum.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Industrial Goods -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="card h-100 product-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Industrial Goods" class="card-img-top">
+                        <img src="/assests/images/cityevening.jpeg" alt="Quality Industrial Goods Trading"
+                            class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Industrial Goods</h3>
                             <p class="card-text">High-quality machinery and equipment for various industries.</p>
@@ -160,11 +203,13 @@
     <!-- Services Section -->
     <section id="services" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up">Our Trading Services</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <!-- International Trading -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="100">
                     <div class="card h-100 service-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="International Trading" class="card-img-top">
+                        <img src="/assests/images/InternationalTrading.jpg"
+                            alt="Professional International Trading Services" class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">International Trading Services</h3>
                             <p>Facilitating import/export transactions, managing logistics, and negotiating favorable
@@ -172,10 +217,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Sourcing and Procurement -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="200">
                     <div class="card h-100 service-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Sourcing and Procurement"
-                            class="card-img-top">
+                        <img src="/assests/images/SourcingandProcurement.png"
+                            alt="Global Sourcing and Procurement Services" class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Sourcing and Procurement</h3>
                             <p>Sourcing high-quality products, conducting inspections, and ensuring competitive pricing.
@@ -183,9 +229,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Market Research -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="300">
                     <div class="card h-100 service-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Market Research" class="card-img-top">
+                        <img src="/assests/images/TradeFinancingandRiskManagement.jpg"
+                            alt="Comprehensive Market Research Services" class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Market Research and Analysis</h3>
                             <p>Providing insights on global trends, emerging opportunities, and strategic
@@ -193,9 +241,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Trade Financing -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-delay="400">
                     <div class="card h-100 service-card border-0 shadow-sm">
-                        <img src="https://via.placeholder.com/300x150" alt="Trade Financing" class="card-img-top">
+                        <img src="/assests/images/MarketResearchandAnalysis.jpg" alt="Expert Trade Financing Services"
+                            class="card-img-top">
                         <div class="card-body">
                             <h3 class="h5 mb-3">Trade Financing and Risk Management</h3>
                             <p>Offering finance solutions, mitigating risks, and ensuring regulatory compliance.</p>
@@ -209,32 +259,36 @@
     <!-- Features Section -->
     <section id="features" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Why Choose ReubeTrade</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up">Why Choose ReubeTrade</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <!-- Quality Assurance -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="text-center">
-                        <div class="feature-icon">✓</div>
+                        <div class="feature-icon" aria-label="Quality Assurance">✓</div>
                         <h3 class="h5 mb-3">Quality Assurance</h3>
                         <p>We adhere to strict quality control measures to exceed expectations.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Global Reach -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="text-center">
-                        <div class="feature-icon">🌎</div>
+                        <div class="feature-icon" aria-label="Global Reach">🌎</div>
                         <h3 class="h5 mb-3">Global Reach</h3>
                         <p>Our global network ensures access to international markets and opportunities.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Customer-Centric -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="text-center">
-                        <div class="feature-icon">👥</div>
+                        <div class="feature-icon" aria-label="Customer-Centric">👥</div>
                         <h3 class="h5 mb-3">Customer-Centric</h3>
                         <p>Personalized solutions, timely support, and exceptional service.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <!-- Innovation -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
                     <div class="text-center">
-                        <div class="feature-icon">💡</div>
+                        <div class="feature-icon" aria-label="Innovation">💡</div>
                         <h3 class="h5 mb-3">Innovation</h3>
                         <p>Adapting to market changes and delivering value-driven solutions.</p>
                     </div>
@@ -245,13 +299,12 @@
 
     <!-- CTA Section -->
     <section class="cta-section py-5">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-up">
             <h2 class="mb-4">Ready to Start Trading?</h2>
             <p class="mb-4">Connect with our team to discuss your trading needs</p>
             <button class="btn btn-custom btn-lg">Contact Us</button>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-dark text-light py-5">
         <div class="container">
@@ -300,6 +353,11 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 
 </html>

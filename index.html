@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReubeTrade Commodities Ltd</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #1B365D;
+            --secondary-blue: #0077B6;
+            --accent-gold: #FFB649;
+        }
+
+        .navbar-custom {
+            background-color: var(--primary-blue);
+        }
+
+        .hero-section {
+            background-color: var(--primary-blue);
+            padding: 120px 0 80px;
+            color: white;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: var(--secondary-blue);
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .product-card,
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover,
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-section {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-custom {
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffa726;
+            color: var(--primary-blue);
+        }
+
+        .card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ReubeTrade</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Global Trade Excellence</h1>
+            <p class="lead mb-4">Your trusted partner in international commodities trading</p>
+            <button class="btn btn-custom btn-lg">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Product Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Agricultural Commodities"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Agricultural Commodities</h3>
+                            <p class="card-text">Quality agricultural products including cashew nuts, rice, and more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Metals and Minerals" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Metals and Minerals</h3>
+                            <p class="card-text">Premium metals and minerals sourced from trusted global suppliers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Energy Sources" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Energy Sources</h3>
+                            <p class="card-text">Reliable energy products including crude oil, LNG, and petroleum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Industrial Goods" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Industrial Goods</h3>
+                            <p class="card-text">High-quality machinery and equipment for various industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="International Trading" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">International Trading Services</h3>
+                            <p>Facilitating import/export transactions, managing logistics, and negotiating favorable
+                                terms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Sourcing and Procurement"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Sourcing and Procurement</h3>
+                            <p>Sourcing high-quality products, conducting inspections, and ensuring competitive pricing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Market Research" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Market Research and Analysis</h3>
+                            <p>Providing insights on global trends, emerging opportunities, and strategic
+                                recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/300x150" alt="Trade Financing" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Trade Financing and Risk Management</h3>
+                            <p>Offering finance solutions, mitigating risks, and ensuring regulatory compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose ReubeTrade</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="h5 mb-3">Quality Assurance</h3>
+                        <p>We adhere to strict quality control measures to exceed expectations.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="feature-icon">🌎</div>
+                        <h3 class="h5 mb-3">Global Reach</h3>
+                        <p>Our global network ensures access to international markets and opportunities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="h5 mb-3">Customer-Centric</h3>
+                        <p>Personalized solutions, timely support, and exceptional service.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="feature-icon">💡</div>
+                        <h3 class="h5 mb-3">Innovation</h3>
+                        <p>Adapting to market changes and delivering value-driven solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Start Trading?</h2>
+            <p class="mb-4">Connect with our team to discuss your trading needs</p>
+            <button class="btn btn-custom btn-lg">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@reubetrade.com</li>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Address: Global Trade Center</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Agricultural</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Metals & Minerals</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Energy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Industrial</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Trading</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Procurement</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Market Research</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Risk Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Documentation</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Trading Terms</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Market Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

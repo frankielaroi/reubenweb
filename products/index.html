@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.reubetrade.com">
     <link rel="icon" href="/assests/images/logo.png" type="image/png">
-    <title>Products | ReubeTrade Commodities Ltd</title>
+    <title>Products | ReubeTrade Commodities Commodities Ltd</title>
     <!-- Bootstrap CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -104,7 +104,9 @@
             color: #555;
             line-height: 1.6;
         }
-
+        a{
+            
+        }
         footer {
             background-color: var(--primary-green);
             color: var(--white);
@@ -146,6 +148,44 @@
         .social-icons a:hover {
             background-color: var(--secondary-green);
         }
+                .product-card,
+        .service-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid var(--light-green);
+            height: 100%;
+            background-color: var(--white);
+        }
+
+        .product-card:hover,
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(11, 102, 35, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .btn-custom {
+            background-color: var(--white);
+            color: var(--primary-green);
+            font-weight: bold;
+            border: 2px solid var(--primary-green);
+            padding: 0.75rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--primary-green);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 
@@ -153,9 +193,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="/">
                 <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
-                ReubeTrade
+                ReubeTrade Commodities
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -179,134 +219,143 @@
         </div>
     </nav>
 
-    <!-- Product Section --><section id="products" class="py-5">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Our Product Categories</h2>
-            <div class="row g-4">
-                <!-- Agricultural Products -->
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/corn/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/yellowcorn2.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Yellow Maize (GMO & Non-GMO)</h3>
-                                <p>ReubeTrade supplies high-quality yellow maize to meet the diverse needs of our global
-                                    clients. Our yellow maize is carefully sourced from trusted producers in Africa, Brazil,
-                                    India, ensuring it meets international standards for quality and safety.</p>
-                            </div>
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Product Categories</h2>
+        <div class="row g-4">
+            <!-- Agricultural Products -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/corn/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/yellowcorn2.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Yellow Maize (GMO & Non-GMO)</h3>
+                            <a href="/corn/" class="btn btn-success">Learn More</a>
+                            <p>ReubeTrade supplies high-quality yellow maize to meet the diverse needs of our global
+                                clients. Our yellow maize is carefully sourced from trusted producers in Africa, Brazil,
+                                India, ensuring it meets international standards for quality and safety.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/cashew/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/cashew.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Cashew Nuts</h3>
-                                <p>Our raw and processed cashew nuts are exported to markets in Asia, Europe, and the US,
-                                    where they are highly sought after for snacks and culinary uses.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/cashew/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/cashew.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Cashew Nuts</h3>
+                            <a href="/cashew/" class="btn btn-success">Learn More</a>
+                            <p>Our raw and processed cashew nuts are exported to markets in Asia, Europe, and the US,
+                                where they are highly sought after for snacks and culinary uses.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/soybean/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/soybean.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Soybean</h3>
-                                <p>We supply high-quality soybeans for food and industrial use and soybean meal, a
-                                    protein-rich ingredient essential for poultry, livestock, and aquaculture feed.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/soybean/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/soybean.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Soybean</h3>
+                            <a href="/soybean/" class="btn btn-success">Learn More</a>
+                            <p>We supply high-quality soybeans for food and industrial use and soybean meal, a
+                                protein-rich ingredient essential for poultry, livestock, and aquaculture feed.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/sugar/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/whitesugar.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Sugar (ICUMSA 45)</h3>
-                                <p>Known for its purity and quality, ICUMSA 45 sugar is ideal for food and beverage
-                                    production. We source this premium sugar from trusted producers in Brazil.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/sugar/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/whitesugar.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Sugar (ICUMSA 45)</h3>
+                            <a href="/sugar/" class="btn btn-success">Learn More</a>
+                            <p>Known for its purity and quality, ICUMSA 45 sugar is ideal for food and beverage
+                                production. We source this premium sugar from trusted producers in Brazil.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/rice/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/rice.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Rice</h3>
-                                <p>We supply premium Grade A perfume rice, renowned for its aromatic fragrance, superior
-                                    quality, and exceptional taste from Thailand, Vietnam, and India.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/rice/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/rice.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Rice</h3>
+                            <a href="/rice/" class="btn btn-success">Learn More</a>
+                            <p>We supply premium Grade A perfume rice, renowned for its aromatic fragrance, superior
+                                quality, and exceptional taste from Thailand, Vietnam, and India.</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <a href="/shea/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/sheabutter.jpeg" alt="Agricultural Products" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Shea Butter</h3>
-                                <p>We supply premium 100% organic Shea butter, free from any addictive or mixtures. Our Shea
-                                    butter is sourced from trusted partners in Ghana.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <a href="/shea/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/sheabutter.jpeg" alt="Agricultural Products" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Shea Butter</h3>
+                            <a href="/shea/" class="btn btn-success">Learn More</a>
+                            <p>We supply premium 100% organic Shea butter, free from any addictive or mixtures. Our Shea
+                                butter is sourced from trusted partners in Ghana.</p>
                         </div>
-                    </a>
-                </div>
-                <!-- Metals and Minerals -->
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <a href="/minerals/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/goldbar.jpeg" alt="Metals and Minerals" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Metals and Minerals</h3>
-                                <ul class="list-unstyled">
-                                    <li>✓ Gold</li>
-                                    <li>✓ Diamonds</li>
-                                    <li>✓ Bauxite</li>
-                                    <li>✓ Iron Ore</li>
-                                </ul>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Metals and Minerals -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <a href="/minerals/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/goldbar.jpeg" alt="Metals and Minerals" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Metals and Minerals</h3>
+                            <a href="/minerals/" class="btn btn-success">Learn More</a>
+                            <ul class="list-unstyled">
+                                <li>✓ Gold</li>
+                                <li>✓ Diamonds</li>
+                                <li>✓ Bauxite</li>
+                                <li>✓ Iron Ore</li>
+                            </ul>
                         </div>
-                    </a>
-                </div>
-                <!-- Energy Sources -->
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <a href="/energy/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/oil.jpeg" alt="Energy Sources" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Energy Sources</h3>
-                                <p>We supply diverse energy products, including crude oil, diesel, LNG, LPG, gasoline, Jet
-                                    A-1 fuel, and renewable energy solutions like solar and wind systems. We ensure
-                                    high-quality standards, sustainability, and reliable delivery to meet global energy
-                                    needs.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Energy Sources -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <a href="/energy/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/oil.jpeg" alt="Energy Sources" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Energy Sources</h3>
+                            <a href="/energy/" class="btn btn-success">Learn More</a>
+                            <p>We supply diverse energy products, including crude oil, diesel, LNG, LPG, gasoline, Jet
+                                A-1 fuel, and renewable energy solutions like solar and wind systems. We ensure
+                                high-quality standards, sustainability, and reliable delivery to meet global energy
+                                needs.</p>
                         </div>
-                    </a>
-                </div>
-                <!-- Industrial Goods -->
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <a href="/industrial/" class="text-decoration-none">
-                        <div class="product-card">
-                            <img src="/assests/images/cityevening.jpeg" alt="Industrial Goods" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="h5 mb-3">Industrial Machinery</h3>
-                                <p>We supply a wide range of industrial machinery to support manufacturing, construction,
-                                    agriculture, and other sectors. Our machinery is sourced from trusted global
-                                    manufacturers, ensuring high performance, durability, and compliance with industry
-                                    standards.</p>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Industrial Goods -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <a href="/industrial/" class="text-decoration-none">
+                    <div class="product-card">
+                        <img src="/assests/images/cityevening.jpeg" alt="Industrial Goods" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Industrial Machinery</h3>
+                            <a href="/industrial/" class="btn btn-success">Learn More</a>
+                            <p>We supply a wide range of industrial machinery to support manufacturing, construction,
+                                agriculture, and other sectors. Our machinery is sourced from trusted global
+                                manufacturers, ensuring high performance, durability, and compliance with industry
+                                standards.</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -315,7 +364,7 @@
                     <h5 class="mb-3">Contact Information</h5>
                     <ul class="list-styled">
                         <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
-                        <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-phone me-2"></i>+233200495993</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
                     </ul>
                 </div>
@@ -340,7 +389,9 @@
                 <div class="col-md-6 col-lg-3">
                     <h5 class="mb-3">Connect With Us</h5>
                     <div class="social-icons mb-3">
-                        <a href="https://x.com/reubetrade?s=21" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/reubetrade?s=21" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+<path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"></path>
+</svg></i></i></a>
                         <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
                     </div>
@@ -354,7 +405,7 @@
                 </div>
             </div>
             <div class="border-top border-secondary mt-4 pt-4 text-center">
-                <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+                <p>© 2025 ReubeTrade Commodities Commodities Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>

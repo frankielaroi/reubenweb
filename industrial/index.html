@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+    <meta name="keywords"
+        content="industrial goods trading, manufacturing supplies, raw materials, industrial equipment, international trade, sustainable sourcing, ethical trading">
+    <meta name="author" content="ReubeTrade Commodities Ltd">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.reubetrade.com">
+    <link rel="icon" href="/assests/images/logo.png" type="image/png">
+    <title>Industrial Goods | ReubeTrade Commodities Ltd</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-green: #0B6623;
+            --secondary-green: #228B22;
+            --light-green: #90EE90;
+            --white: #FFFFFF;
+            --gray: #333333;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding-top: 76px;
+            color: var(--gray);
+        }
+
+        .navbar-custom {
+            background-color: rgba(144, 238, 144, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--primary-green) !important;
+            font-weight: 500;
+            padding: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navbar-custom .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-green);
+            transition: var(--transition);
+        }
+
+        .navbar-custom .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .industrial-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .industrial-section h1 {
+            color: var(--primary-green);
+            margin-bottom: 30px;
+            font-weight: 800;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .industrial-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            background-color: var(--white);
+            margin-bottom: 30px;
+        }
+
+        .industrial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .industrial-img {
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .industrial-card:hover .industrial-img {
+            transform: scale(1.05);
+        }
+
+        .industrial-info {
+            padding: 25px;
+        }
+
+        .industrial-title {
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--white);
+            color: var(--primary-green) !important;
+            transform: translateY(-3px);
+        }
+
+        .newsletter-form .form-control {
+            border-radius: 30px;
+            padding: 12px 20px;
+            border: none;
+        }
+
+        .btn-submit {
+            background-color: var(--secondary-green);
+            color: var(--white);
+            border-radius: 30px;
+            padding: 12px 25px;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            background-color: var(--white);
+            color: var(--primary-green);
+        }
+
+        @media (max-width: 768px) {
+            .industrial-section h1 {
+                font-size: 2rem;
+            }
+
+            .industrial-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+          <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                  <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
+                  ReubeTrade
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="/about/">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/products/">Products</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/services/">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/contact/">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Industrial Section -->
+      <section class="industrial-section">
+          <div class="container">
+              <h1>Industrial Machinery</h1>
+              <p class="lead mb-5">ReubeTrade Commodities is a trusted supplier of high-quality industrial machinery designed to meet the diverse needs of businesses across various sectors, including manufacturing, construction, agriculture, mining, and energy. Our extensive range of machinery is sourced from globally renowned manufacturers known for their advanced technology, durability, and efficiency.</p>
+            
+              <h2 class="mb-4">Machine Categories</h2>
+              <p>We offer industrial machinery in the following categories:</p>
+              <div class="row">
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="industrial-card">
+                          <img src="/assests/images/manufactoring.jpeg" alt="Manufacturing Equipment" class="industrial-img img-fluid">
+                          <div class="industrial-info">
+                              <h3 class="industrial-title">1. Manufacturing Equipment</h3>
+                              <p>Includes automated assembly lines, CNC machines, injection molding machines, and more.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="industrial-card">
+                          <img src="/assests/images/construction.jpeg" alt="Construction Machinery" class="industrial-img img-fluid">
+                          <div class="industrial-info">
+                              <h3 class="industrial-title">2. Construction Machinery</h3>
+                              <p>Features heavy-duty equipment such as excavators, bulldozers, cranes, and concrete mixers.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="industrial-card">
+                          <img src="/assests/images/agric.jpeg" alt="Agricultural Machinery" class="industrial-img img-fluid">
+                          <div class="industrial-info">
+                              <h3 class="industrial-title">3. Agricultural Machinery</h3>
+                              <p>Covers tractors, harvesters, irrigation systems, and planting equipment.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="industrial-card">
+                          <img src="/assests/images/mining.jpeg" alt="Mining and Quarrying Equipment" class="industrial-img img-fluid">
+                          <div class="industrial-info">
+                              <h3 class="industrial-title">4. Mining and Quarrying Equipment</h3>
+                              <p>Includes drilling rigs, loaders, crushers, and other machinery critical to mining operations.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="industrial-card">
+                          <img src="/assests/images/renewable.jpeg" alt="Energy Sector Equipment" class="industrial-img img-fluid">
+                          <div class="industrial-info">
+                              <h3 class="industrial-title">5. Energy Sector Equipment</h3>
+                              <p>Offers machinery for renewable energy systems, including solar panel production equipment, wind turbine components, and biomass processing machines.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="mt-5">
+                  <h2 class="mb-4">Quality Assurance</h2>
+                  <p>ReubeTrade ensures that all industrial machinery meets international standards for safety, performance, and environmental compliance. We conduct rigorous quality inspections and testing to guarantee reliability and optimal performance.</p>
+
+                  <h2 class="mb-4">Tailored Solutions</h2>
+                  <p>Understanding that each business has unique requirements, we provide customized solutions, including equipment selection, flexible financing options, and post-sale support such as installation, training, and maintenance services.</p>
+
+                  <h2 class="mb-4">Commitment to Excellence</h2>
+                  <p>At ReubeTrade, we are committed to empowering businesses with the tools they need to enhance efficiency and productivity. Whether you are expanding operations or upgrading existing systems, our industrial machinery solutions are designed to help you achieve your goals with confidence.</p>
+
+                  <p class="mt-4">Partner with ReubeTrade for reliable, high-performance industrial machinery that drives success and innovation in your industry.</p>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Contact Information</h5>
+                      <ul class="list-styled">
+                          <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
+                          <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                          <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Quick Links</h5>
+                      <ul class="list-styled">
+                          <li><a href="/about/">About Us</a></li>
+                          <li><a href="/products/">Products</a></li>
+                          <li><a href="/services/">Services</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Our Products</h5>
+                      <ul class="list-styled">
+                          <li><a href="/products/">Agricultural Products</a></li>
+                          <li><a href="/products/">Metals & Minerals</a></li>
+                          <li><a href="/products/">Energy Sources</a></li>
+                          <li><a href="/products/">Industrial Goods</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Connect With Us</h5>
+                      <div class="social-icons mb-3">
+                          <a href="https://x.com/reubetrade?s=21"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
+                      </div>
+                      <p>Subscribe to our newsletter for updates</p>
+                      <form class="newsletter-form">
+                          <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Your email">
+                              <button class="btn btn-submit" type="submit">Subscribe</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="border-top border-secondary mt-4 pt-4 text-center">
+                  <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+              </div>
+          </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+  </body>
+
+  </html>

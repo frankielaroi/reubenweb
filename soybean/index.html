@@ -1,0 +1,338 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+      <meta name="keywords" content="soybean, soybeans, soy trading, agricultural commodities, international trade, sustainable sourcing, ethical trading">
+      <meta name="author" content="ReubeTrade Commodities Ltd">
+      <meta name="robots" content="index, follow">
+      <link rel="canonical" href="https://www.reubetrade.com">
+      <link rel="icon" href="/assests/images/logo.png" type="image/png">
+      <title>Soybeans and Soybean Meal Supply | ReubeTrade Commodities Ltd</title>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <style>
+          :root {
+              --primary-green: #0B6623;
+              --secondary-green: #228B22;
+              --light-green: #90EE90;
+              --white: #FFFFFF;
+              --transition: all 0.3s ease;
+          }
+
+          body {
+              font-family: 'Inter', system-ui, -apple-system, sans-serif;
+              line-height: 1.6;
+              padding-top: 76px;
+          }
+
+          .navbar-custom {
+              background-color: rgba(144, 238, 144, 0.95);
+              backdrop-filter: blur(10px);
+              box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .navbar-custom .nav-link {
+              color: var(--primary-green) !important;
+              font-weight: 500;
+              padding: 1rem;
+              transition: var(--transition);
+              position: relative;
+          }
+
+          .navbar-custom .nav-link::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: var(--primary-green);
+              transition: var(--transition);
+          }
+
+          .navbar-custom .nav-link:hover::after {
+              width: 100%;
+          }
+
+          .navbar-custom .navbar-brand {
+              color: var(--primary-green) !important;
+              font-weight: bold;
+              letter-spacing: -0.5px;
+          }
+
+          .product-section {
+              padding: 80px 0;
+              background-color: var(--white);
+          }
+
+          .product-section h1 {
+              color: var(--primary-green);
+              margin-bottom: 40px;
+              font-weight: 800;
+              text-align: center;
+              font-size: 2.5rem;
+              letter-spacing: -0.5px;
+          }
+
+          .product-section p {
+              font-size: 1.1rem;
+              line-height: 1.8;
+              margin-bottom: 25px;
+              color: #2c3e50;
+              text-align: justify;
+          }
+
+          .product-card {
+              border: none;
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+              transition: var(--transition);
+              background-color: var(--white);
+              margin-bottom: 30px;
+          }
+
+          .product-card:hover {
+              transform: translateY(-10px);
+              box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+          }
+
+          .product-img {
+              height: 250px;
+              object-fit: cover;
+              transition: var(--transition);
+          }
+
+          .product-card:hover .product-img {
+              transform: scale(1.05);
+          }
+
+          .product-info {
+              padding: 25px;
+          }
+
+          .product-title {
+              color: var(--primary-green);
+              font-weight: 700;
+              margin-bottom: 15px;
+              font-size: 1.4rem;
+          }
+
+          .product-description {
+              color: #2c3e50;
+              line-height: 1.6;
+          }
+
+          footer {
+              background-color: var(--primary-green);
+              color: var(--white);
+              padding: 80px 0 40px;
+          }
+
+          footer a {
+              color: var(--white) !important;
+              text-decoration: none;
+              transition: var(--transition);
+              font-weight: 500;
+          }
+
+          footer a:hover {
+              color: var(--light-green) !important;
+              transform: translateX(5px);
+          }
+
+          .list-styled {
+              list-style-type: none;
+              padding-left: 0;
+          }
+
+          .list-styled li {
+              padding: 10px 0;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              transition: var(--transition);
+          }
+
+          .list-styled li:hover {
+              padding-left: 10px;
+          }
+
+          .social-icons a {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.1);
+              margin-right: 12px;
+              transition: var(--transition);
+          }
+
+          .social-icons a:hover {
+              background-color: var(--secondary-green);
+              transform: translateY(-5px);
+          }
+
+          .newsletter-form .form-control {
+              border-radius: 30px;
+              padding: 12px 20px;
+              border: none;
+              background: rgba(255, 255, 255, 0.1);
+              color: var(--white);
+          }
+
+          .newsletter-form .btn-submit {
+              background: var(--secondary-green);
+              color: var(--white);
+              border-radius: 30px;
+              padding: 12px 25px;
+              border: none;
+              transition: var(--transition);
+          }
+
+          .newsletter-form .btn-submit:hover {
+              background: var(--light-green);
+              color: var(--primary-green);
+          }
+      </style>
+  </head>
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+          <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="/">
+                  <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
+                  ReubeTrade
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="/about/">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/products/">Products</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/services/">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/contact/">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Product Section -->
+      <section class="product-section">
+          <div class="container">
+              <h1 data-aos="fade-up">Soybeans and Soybean Meal (Non-GMO) Supply</h1>
+              <p data-aos="fade-up" data-aos-delay="100">ReubeTrade Commodities is a trusted global supplier of both soybeans and soybean meal, catering to the diverse needs of clients in various industries. We source premium soybeans and high-quality soybean meal from leading producers in key regions such as the United States, Brazil, Argentina, and India, ensuring a reliable and consistent supply for our customers worldwide.</p>
+            
+              <h3 data-aos="fade-up">Soybeans:</h3>
+              <p data-aos="fade-up" data-aos-delay="100">ReubeTrade's soybeans are sourced from the best agricultural regions known for producing high-quality, non-GMO soybeans. Our soybeans meet strict industry standards for size, quality, and purity. They are used in various applications, including human consumption, oil extraction, and as a key ingredient in animal feed formulations. ReubeTrade's commitment to quality is demonstrated through meticulous sourcing practices, ensuring that only the best soybeans are offered to our clients.</p>
+            
+              <h3 data-aos="fade-up">Soybean Meal:</h3>
+              <p data-aos="fade-up" data-aos-delay="100">ReubeTrade also supplies premium soybean meal, a byproduct of soybean oil extraction and a key ingredient in animal feed, especially for poultry, livestock, and aquaculture. Our soybean meal is known for its high protein content and nutritional value, essential for supporting animal growth and health. We maintain rigorous quality control measures at every stage of the supply chain to guarantee that our soybean meal meets or exceeds industry standards for protein levels, amino acid composition, and absence of contaminants.</p>
+            
+              <h3 data-aos="fade-up">Sustainability & Ethical Sourcing:</h3>
+              <p data-aos="fade-up" data-aos-delay="100">At ReubeTrade, we prioritize sustainability and responsible sourcing practices in both our soybeans and soybean meal supply chains. We collaborate with farmers and cooperatives to promote environmentally friendly cultivation methods and ensure fair labor practices, supporting long-term sustainability for the communities we work with.</p>
+            
+              <h3 data-aos="fade-up">Flexible Supply Solutions:</h3>
+              <p data-aos="fade-up" data-aos-delay="100">To meet the diverse needs of our clients, ReubeTrade offers flexible supply solutions, including timely deliveries and customizable packaging options. Whether serving large-scale feed manufacturers or smaller enterprises, we are committed to providing high-quality soybeans and soybean meal that contribute to the success of our clients' businesses.</p>
+
+              <div class="row">
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="product-card">
+                          <img src="/assests/images/soybean.jpeg" alt="Premium Soybeans" class="product-img img-fluid">
+                          <div class="product-info">
+                              <h3 class="product-title">Premium Non-GMO Soybeans</h3>
+                              <p class="product-description">High-quality soybeans suitable for food processing, animal feed, and industrial applications.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                      <div class="product-card">
+                          <img src="/assests/images/soybean2.jpeg" alt="Soybean Field" class="product-img img-fluid">
+                          <div class="product-info">
+                              <h3 class="product-title">Premium Soybean Meal</h3>
+                              <p class="product-description">High-protein soybean meal for livestock, poultry, and aquaculture feed applications.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Contact Information</h5>
+                      <ul class="list-styled">
+                          <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
+                          <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                          <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Quick Links</h5>
+                      <ul class="list-styled">
+                          <li><a href="/about/">About Us</a></li>
+                          <li><a href="/products/">Products</a></li>
+                          <li><a href="/services/">Services</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Our Products</h5>
+                      <ul class="list-styled">
+                          <li><a href="/products/">Agricultural Products</a></li>
+                          <li><a href="/products/">Metals & Minerals</a></li>
+                          <li><a href="/products/">Energy Sources</a></li>
+                          <li><a href="/products/">Industrial Goods</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Connect With Us</h5>
+                      <div class="social-icons mb-3">
+                          <a href="https://x.com/reubetrade?s=21"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
+                      </div>
+                      <p>Subscribe to our newsletter for updates</p>
+                      <form class="newsletter-form">
+                          <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Your email">
+                              <button class="btn btn-submit" type="submit">Subscribe</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="border-top border-secondary mt-4 pt-4 text-center">
+                  <p>©2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+              </div>
+          </div>
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init({
+              duration: 1000,
+              once: true
+          });
+      </script>
+  </body>
+
+  </html>

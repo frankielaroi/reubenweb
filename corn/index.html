@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+    <meta name="keywords"
+        content="corn, maize, corn trading, agricultural commodities, international trade, sustainable sourcing, ethical trading">
+    <meta name="author" content="ReubeTrade Commodities Ltd">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.reubetrade.com">
+    <link rel="icon" href="/assests/images/logo.png" type="image/png">
+    <title>Yellow Maize Supply | ReubeTrade Commodities Ltd</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-green: #0B6623;
+            --secondary-green: #228B22;
+            --light-green: #90EE90;
+            --white: #FFFFFF;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            padding-top: 76px;
+            scroll-behavior: smooth;
+        }
+
+        .navbar-custom {
+            background-color: rgba(144, 238, 144, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--primary-green) !important;
+            font-weight: 500;
+            padding: 1rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .navbar-custom .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-green);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .navbar-custom .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .product-section {
+            padding: 100px 0;
+            background-color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-section h1 {
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            font-weight: 800;
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            letter-spacing: -0.02em;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            transition: var(--transition);
+            background-color: var(--white);
+            margin-bottom: 30px;
+            will-change: transform;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-img {
+            height: 300px;
+            object-fit: cover;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.08);
+        }
+
+        .product-info {
+            padding: 30px;
+        }
+
+        .product-title {
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 100px 0 50px;
+            position: relative;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 15px;
+            transition: var(--transition);
+            backdrop-filter: blur(5px);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--secondary-green);
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .newsletter-form .form-control {
+            border-radius: 30px;
+            padding: 14px 24px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-submit {
+            background-color: var(--secondary-green);
+            color: var(--white);
+            border-radius: 30px;
+            padding: 14px 32px;
+            border: none;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--primary-green);
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                padding: 60px 0;
+            }
+
+            .product-card {
+                margin-bottom: 25px;
+            }
+
+            .social-icons a {
+                width: 42px;
+                height: 42px;
+                margin-right: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
+                ReubeTrade
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products/">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services/">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <h1>Yellow Maize Supply</h1>
+            <p>ReubeTrade Commodities is a trusted supplier of high-quality yellow maize, catering to global markets with a commitment to excellence in sourcing, quality control, and logistics. Our yellow maize is sourced from leading maize-producing regions, ensuring a steady and reliable supply of this essential agricultural commodity.</p>
+            <h3>Sourcing & Quality:</h3>
+            <p>We work directly with reputable farmers and cooperatives in major maize-producing regions, including countries in Africa, the United States, Brazil, and Argentina. Our yellow maize is carefully selected, ensuring it meets the highest standards of quality for purity, size, and consistency.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Non-GMO:</strong> Our yellow maize is free from genetically modified organisms, ensuring a natural and healthy product.</li>
+                <li><strong>Premium Quality:</strong> We prioritize quality at every stage, from cultivation to processing, to ensure the maize is free from contaminants and meets global standards.</li>
+                <li><strong>Versatility:</strong> Ideal for a wide range of applications, including animal feed, food products, and industrial uses.</li>
+            </ul>
+            <h3>Applications:</h3>
+            <ul>
+                <li><strong>Animal Feed:</strong> Our yellow maize is a crucial component in poultry, livestock, and aquaculture feed, offering high energy and nutritional value.</li>
+                <li><strong>Human Consumption:</strong> Yellow maize is used in various food products, including cornmeal, corn flour, and snack foods.</li>
+                <li><strong>Industrial Uses:</strong> It is also widely used in the production of biofuels, starch, and other industrial applications.</li>
+            </ul>
+            <h3>Sustainability & Ethical Sourcing:</h3>
+            <p>ReubeTrade is committed to responsible sourcing and supports sustainable farming practices. We work closely with farmers to promote eco-friendly cultivation methods and ensure fair labor practices throughout the production process.</p>
+            <h3>Flexible Supply & Delivery:</h3>
+            <p>We offer flexible supply solutions to meet the needs of wholesalers, retailers, and manufacturers worldwide. Our logistics team ensures timely and reliable delivery, with options for bulk shipments and customized packaging to suit specific requirements.</p>
+            <p>By choosing ReubeTrade as your supplier of yellow maize, you benefit from a product that combines superior quality, consistency, and ethical sourcing, making it the ideal choice for a wide range of industries.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="product-card">
+                        <img src="/assests/images/yellowcorn.jpeg" alt="Yellow Maize" class="product-img img-fluid">
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Yellow Maize</h3>
+                            <p class="product-description">High-quality yellow maize suitable for animal feed, food products, and industrial applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="product-card">
+                        <img src="/assests/images/yellowcorn2.jpeg" alt="Yellow Maize Field" class="product-img img-fluid">
+                        <div class="product-info">
+                            <h3 class="product-title">Yellow Maize Fields</h3>
+                            <p class="product-description">Our maize is sourced from premium agricultural regions ensuring top quality and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <ul class="list-styled">
+                        <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-styled">
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/products/">Products</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Our Products</h5>
+                    <ul class="list-styled">
+                        <li><a href="/products/">Agricultural Products</a></li>
+                        <li><a href="/products/">Metals & Minerals</a></li>
+                        <li><a href="/products/">Energy Sources</a></li>
+                        <li><a href="/products/">Industrial Goods</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="https://x.com/reubetrade?s=21"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-submit" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

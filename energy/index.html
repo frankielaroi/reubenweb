@@ -1,0 +1,347 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+      <meta name="keywords" content="energy trading, crude oil, natural gas, coal, renewable energy, international trade, sustainable sourcing, ethical trading">
+      <meta name="author" content="ReubeTrade Commodities Ltd">
+      <meta name="robots" content="index, follow">
+      <link rel="canonical" href="https://www.reubetrade.com">
+      <link rel="icon" href="/assests/images/logo.png" type="image/png">
+      <title>Energy Products Supply | ReubeTrade Commodities Ltd</title>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <style>
+          :root {
+              --primary-green: #0B6623;
+              --secondary-green: #228B22;
+              --light-green: #90EE90;
+              --white: #FFFFFF;
+              --transition: all 0.3s ease;
+          }
+
+          body {
+              font-family: 'Inter', sans-serif;
+              line-height: 1.6;
+              padding-top: 76px;
+          }
+
+          .navbar-custom {
+              background-color: rgba(144, 238, 144, 0.95);
+              backdrop-filter: blur(10px);
+              box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .navbar-custom .nav-link {
+              color: var(--primary-green) !important;
+              font-weight: 600;
+              padding: 1rem;
+              transition: var(--transition);
+              position: relative;
+          }
+
+          .navbar-custom .nav-link::after {
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: var(--primary-green);
+              transition: var(--transition);
+          }
+
+          .navbar-custom .nav-link:hover::after {
+              width: 100%;
+          }
+
+          .product-section {
+              padding: 80px 0;
+              background-color: var(--white);
+          }
+
+          .product-section h1 {
+              color: var(--primary-green);
+              margin-bottom: 40px;
+              font-weight: 800;
+              text-align: center;
+              font-size: 2.5rem;
+          }
+
+          .product-card {
+              border: none;
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+              transition: var(--transition);
+              background-color: var(--white);
+              margin-bottom: 30px;
+          }
+
+          .product-card:hover {
+              transform: translateY(-10px);
+              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+          }
+
+          .product-img {
+              height: 250px;
+              object-fit: cover;
+              transition: var(--transition);
+          }
+
+          .product-card:hover .product-img {
+              transform: scale(1.05);
+          }
+
+          .product-info {
+              padding: 30px;
+          }
+
+          .product-title {
+              color: var(--primary-green);
+              font-weight: 700;
+              margin-bottom: 20px;
+              font-size: 1.5rem;
+          }
+
+          .specifications-list {
+              list-style-type: none;
+              padding-left: 0;
+          }
+
+          .specifications-list li {
+              margin-bottom: 12px;
+              padding-left: 25px;
+              position: relative;
+              font-size: 1.1rem;
+          }
+
+          .specifications-list li:before {
+              content: "→";
+              position: absolute;
+              left: 0;
+              color: var(--primary-green);
+          }
+
+          footer {
+              background-color: var(--primary-green);
+              color: var(--white);
+              padding: 80px 0 40px;
+          }
+
+          footer a {
+              color: var(--white) !important;
+              text-decoration: none;
+              transition: var(--transition);
+              font-weight: 500;
+          }
+
+          .social-icons a {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.1);
+              margin-right: 15px;
+              transition: var(--transition);
+          }
+
+          .social-icons a:hover {
+              background-color: var(--secondary-green);
+              transform: translateY(-3px);
+          }
+
+          .newsletter-form .form-control {
+              border-radius: 30px;
+              padding: 12px 20px;
+              border: none;
+          }
+
+          .btn-submit {
+              background-color: var(--secondary-green);
+              color: var(--white);
+              border-radius: 30px;
+              padding: 12px 25px;
+              border: none;
+              transition: var(--transition);
+          }
+
+          .btn-submit:hover {
+              background-color: var(--primary-green);
+              transform: translateY(-2px);
+          }
+      </style>
+  </head>
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+          <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                  <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
+                  ReubeTrade
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="/about/">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/products/">Products</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/services/">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/contact/">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Product Section -->
+      <section class="product-section">
+          <div class="container">
+              <h1 data-aos="fade-up">Energy Sources</h1>
+              <p data-aos="fade-up">ReubeTrade Commodities has established a global network of direct connections with oil producers and suppliers in key oil-producing countries, including:</p>
+            
+              <ul class="specifications-list mb-4" data-aos="fade-up">
+                  <li>Saudi Arabia</li>
+                  <li>United States</li>
+                  <li>Russia</li>
+                  <li>Netherlands</li>
+                  <li>Nigeria</li>
+                  <li>United Arab Emirates</li>
+                  <li>Kuwait</li>
+                  <li>Angola</li>
+                  <li>Kazakhstan</li>
+              </ul>
+
+              <p data-aos="fade-up">Enabling us to source a wide range of petroleum products, including:</p>
+              <ul class="specifications-list mb-4" data-aos="fade-up">
+                  <li>Crude oil</li>
+                  <li>Diesel EN590 10PPM and EN 50PPM</li>
+                  <li>Liquified Natural Gas (LNG)</li>
+                  <li>Liquified Petroleum Gas (LPG)</li>
+                  <li>Gasoline (Petrol)</li>
+                  <li>Jet A-1 Fuel</li>
+              </ul>
+
+              <p data-aos="fade-up">We can allocate these products to buyers through various terminals, including:</p>
+              <ul class="specifications-list mb-4" data-aos="fade-up">
+                  <li>TTT/TTV (Rotterdam, Netherlands)</li>
+                  <li>Rotterdam (Netherlands)</li>
+                  <li>Fujairah (United Arab Emirates)</li>
+                  <li>Houston (USA)</li>
+                  <li>Novorossiysk (Russia)</li>
+                  <li>Aktau (Kazakhstan)</li>
+              </ul>
+
+              <p data-aos="fade-up">Our direct connections with producers and suppliers ensure a reliable and efficient supply chain, allowing us to provide competitive pricing and flexible logistics solutions to our customers.</p>
+
+              <div class="row">
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                      <div class="product-card">
+                          <img src="/assests/images/oil.jpeg" alt="Crude Oil" class="product-img img-fluid">
+                          <div class="product-info">
+                              <h3 class="product-title">Crude Oil</h3>
+                              <ul class="specifications-list">
+                                  <li>Various grades available</li>
+                                  <li>Quality tested</li>
+                                  <li>Competitive pricing</li>
+                                  <li>Flexible delivery options</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                      <div class="product-card">
+                          <img src="/assests/images/oiltanks.jpeg" alt="Natural Gas" class="product-img img-fluid">
+                          <div class="product-info">
+                              <h3 class="product-title">Natural Gas</h3>
+                              <ul class="specifications-list">
+                                  <li>LNG and Pipeline options</li>
+                                  <li>Reliable supply chain</li>
+                                  <li>Global sourcing network</li>
+                                  <li>Long-term contracts available</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Contact Information</h5>
+                      <ul class="list-styled">
+                          <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
+                          <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                          <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Quick Links</h5>
+                      <ul class="list-styled">
+                          <li><a href="/about/">About Us</a></li>
+                          <li><a href="/products/">Products</a></li>
+                          <li><a href="/services/">Services</a></li>
+                          <li><a href="/contact/">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Our Products</h5>
+                      <ul class="list-styled">
+                          <li><a href="/products/">Agricultural Products</a></li>
+                          <li><a href="/products/">Metals & Minerals</a></li>
+                          <li><a href="/products/">Energy Sources</a></li>
+                          <li><a href="/products/">Industrial Goods</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="mb-3">Connect With Us</h5>
+                      <div class="social-icons mb-3">
+                          <a href="https://x.com/reubetrade?s=21"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
+                      </div>
+                      <p>Subscribe to our newsletter for updates</p>
+                      <form class="newsletter-form">
+                          <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Your email">
+                              <button class="btn btn-submit" type="submit">Subscribe</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="border-top border-secondary mt-4 pt-4 text-center">
+                  <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+              </div>
+          </div>
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init({
+              duration: 1000,
+              once: true,
+              offset: 100
+          });
+      </script>
+  </body>
+  </html>

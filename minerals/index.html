@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ReubeTrade Commodities Ltd - Your trusted partner in international commodities trading. We offer agricultural products, metals, minerals, energy sources, and industrial goods.">
+    <meta name="keywords" content="minerals trading, mineral resources, mining, industrial minerals, precious metals, metals trading, international trade, sustainable sourcing, ethical trading">
+    <meta name="author" content="ReubeTrade Commodities Ltd">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.reubetrade.com">
+    <link rel="icon" href="/assests/images/logo.png" type="image/png">
+    <title>Minerals Trading | ReubeTrade Commodities Ltd</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-green: #0B6623;
+            --secondary-green: #228B22;
+            --light-green: #90EE90;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding-top: 76px;
+        }
+
+        .navbar-custom {
+            background-color: rgba(144, 238, 144, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--primary-green) !important;
+            font-weight: 500;
+            padding: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navbar-custom .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-green);
+            transition: var(--transition);
+        }
+
+        .navbar-custom .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mineral-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .mineral-section h1 {
+            color: var(--primary-green);
+            margin-bottom: 50px;
+            font-weight: 800;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .mineral-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            background-color: var(--white);
+            margin-bottom: 30px;
+        }
+
+        .mineral-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .mineral-img {
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .mineral-card:hover .mineral-img {
+            transform: scale(1.05);
+        }
+
+        .mineral-info {
+            padding: 30px;
+        }
+
+        .mineral-title {
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .specifications-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .specifications-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+
+        footer {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 80px 0 40px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--secondary-green);
+            transform: translateY(-5px);
+        }
+
+        .newsletter-form .form-control {
+            border-radius: 30px;
+            padding: 12px 20px;
+            border: none;
+        }
+
+        .btn-submit {
+            background-color: var(--secondary-green);
+            color: var(--white);
+            border-radius: 30px;
+            padding: 12px 25px;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            background-color: var(--light-green);
+            color: var(--primary-green);
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .mineral-section h1 {
+                font-size: 2rem;
+            }
+            
+            .mineral-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
+                ReubeTrade
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products/">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services/">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mineral Section -->
+    <section class="mineral-section">
+        <div class="container">
+            <h1 data-aos="fade-down">Metals and Minerals</h1>
+            <div class="row">
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mineral-card">
+                        <img src="/assests/images/goldbar.jpeg" alt="Gold" class="mineral-img img-fluid">
+                        <div class="mineral-info">
+                            <h3 class="mineral-title">Gold Supply Specifications</h3>
+                            <ul class="specifications-list">
+                                <li>Form: 1-kilogram gold bars</li>
+                                <li>Purity: 22+ to 23+ Karats (92-96%), refined to 23-24+ Karats (96-99.99%)</li>
+                                <li>Origin: African countries with government certification</li>
+                                <li>Monthly Delivery: 100-1,000 kg or more</li>
+                                <li>Pricing: Minimum 10% discount on LBMA price</li>
+                                <li>Payment: SWIFT MT 760 SBLC, MT 700 DLC, SWIFT 799, or escrow</li>
+                                <li>Packaging: International-standard export metallic boxes</li>
+                                <li>Delivery: To buyer's international airport</li>
+                                <li>Payment Methods: SWIFT MT 103 or cryptocurrency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mineral-card">
+                        <img src="/assests/images/diamond.jpeg" alt="Diamond" class="mineral-img img-fluid">
+                        <div class="mineral-info">
+                            <h3 class="mineral-title">Diamond Supply</h3>
+                            <p class="mineral-description">We supply high-quality diamonds from reputable African mines.</p>
+                            <h4>Specifications:</h4>
+                            <ul class="specifications-list">
+                                <li>Types: Rough and polished diamonds for industrial use, jewelry, and investment</li>
+                                <li>Quality: Flawless to slightly included grades (GIA and IGI standards)</li>
+                                <li>Sizes: Various carat weights available</li>
+                            </ul>
+                            <h4>Ethical Sourcing:</h4>
+                            <p>All diamonds are conflict-free and Kimberley Process certified, ensuring responsible mining and trading practices.</p>
+                            <h4>Tailored Solutions:</h4>
+                            <p>Flexible supply options available for jewelers, manufacturers, and investors, with comprehensive logistics and documentation support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <ul class="list-styled">
+                        <li><i class="fas fa-envelope me-2"></i>hello@reubetrade.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Global Trade Center</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-styled">
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/products/">Products</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Our Products</h5>
+                    <ul class="list-styled">
+                        <li><a href="/products/">Agricultural Products</a></li>
+                        <li><a href="/products/">Metals & Minerals</a></li>
+                        <li><a href="/products/">Energy Sources</a></li>
+                        <li><a href="/products/">Industrial Goods</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="https://x.com/reubetrade?s=21"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/reubetrade-commodities-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/reubetrade_commodities/profilecard/?igsh=MTh4MHJsZ2d1MmgxNw=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-submit" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p>© 2025 ReubeTrade Commodities Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

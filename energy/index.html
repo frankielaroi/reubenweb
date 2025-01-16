@@ -338,6 +338,30 @@
               </div>
           </div>
       </footer>
+      utton id="scrollToTop" class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4"
+        style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Scroll to Top functionality
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

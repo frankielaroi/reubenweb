@@ -265,7 +265,6 @@
             <h1 class="display-4 mb-4">Your Passport to Global Commodities
 </h1>
             <p class="lead mb-4">Your trusted partner in international commodities trading</p>
-            <a href="#contact" class="btn btn-custom btn-lg">Get Started</a>
         </div>
     </section>
 
@@ -618,11 +617,11 @@
     <!-- Contact Section -->
     
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row g-4">
-               <li><i class="fas fa-map-marker-alt me-2"></i>Registered Address: Block 19 Plot 34, St. Paul’s Catholic Church Street, Amakom, Kumasi, Ghana.</li>
+               <li><i class="fas fa-map-marker-alt me-2"></i>Registered Address: Block 19 Plot 34, St. Paul's Catholic Church Street, Amakom, Kumasi, Ghana.</li>
 
                         <li>
                             <i class="fas fa-map-marker-alt me-2"></i>
@@ -669,6 +668,31 @@ Affiliate Partner Address3 Lisa Street, Brampton, L6T 4A2, Ontario, Canada.
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll to Top functionality
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+        
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

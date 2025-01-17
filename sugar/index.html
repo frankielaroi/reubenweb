@@ -31,34 +31,38 @@
               color: var(--gray);
           }
 
-          .navbar-custom {
-              background-color: rgba(144, 238, 144, 0.95);
-              backdrop-filter: blur(10px);
-              box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-          }
+              .navbar-custom {
+            background-color: #90EE90;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-          .navbar-custom .nav-link {
-              color: var(--primary-green) !important;
-              font-weight: 500;
-              padding: 1rem;
-              transition: var(--transition);
-              position: relative;
-          }
+        .navbar-custom .nav-link {
+            color: var(--primary-green) !important;
+            font-weight: 500;
+            padding: 1rem;
+            transition: color 0.3s ease;
+        }
 
-          .navbar-custom .nav-link::after {
-              content: '';
-              position: absolute;
-              width: 0;
-              height: 2px;
-              bottom: 0;
-              left: 0;
-              background-color: var(--primary-green);
-              transition: var(--transition);
-          }
+        .navbar-custom .nav-link:hover {
+            color: var(--secondary-green) !important;
+        }
 
-          .navbar-custom .nav-link:hover::after {
-              width: 100%;
-          }
+        .navbar-custom .navbar-brand {
+            color: var(--primary-green) !important;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            transition: opacity 0.3s ease;
+        }
+
+        .navbar-toggler.collapsed {
+            opacity: 1;
+        }
+
+        .navbar-toggler:not(.collapsed) {
+            opacity: 0;
+        }
 
           .product-section {
               padding: 80px 0;
@@ -190,6 +194,22 @@
               }
           }
       </style>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.classList.add('collapsed');
+        });
+
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+
+            if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+                navbarCollapse.classList.remove('show');
+                navbarToggler.classList.add('collapsed');
+            }
+        });
+    </script>
   </head>
 
   <body>
@@ -330,7 +350,6 @@
                      Ltd. All rights reserved.</p>
                   </div    >
       </footer>
-      -- Scroll to Top Button -->
     <button id="scrollToTop" class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4"
         style="display: none;">
         <i class="fas fa-arrow-up"></i>

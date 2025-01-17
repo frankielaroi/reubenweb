@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.reubetrade.com">
     <link rel="icon" href="/assests/images/logo.png" type="image/png">
-    <title>Yellow Maize Supply | ReubeTrade Commodities Commodities Ltd</title>
+    <title>Yellow Maize Supply | ReubeTrade  Commodities Ltd</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
@@ -34,34 +34,36 @@
         }
 
         .navbar-custom {
-            background-color: rgba(144, 238, 144, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            background-color: #90EE90;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-custom .nav-link {
             color: var(--primary-green) !important;
             font-weight: 500;
             padding: 1rem;
-            position: relative;
-            transition: var(--transition);
+            transition: color 0.3s ease;
         }
 
-        .navbar-custom .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background-color: var(--primary-green);
-            transition: var(--transition);
-            transform: translateX(-50%);
+        .navbar-custom .nav-link:hover {
+            color: var(--secondary-green) !important;
         }
 
-        .navbar-custom .nav-link:hover::after {
-            width: 80%;
+        .navbar-custom .navbar-brand {
+            color: var(--primary-green) !important;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            transition: opacity 0.3s ease;
+        }
+
+        .navbar-toggler.collapsed {
+            opacity: 1;
+        }
+
+        .navbar-toggler:not(.collapsed) {
+            opacity: 0;
         }
 
         .product-section {
@@ -166,6 +168,27 @@
             transform: translateX(5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
+        
+.list-styled {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list-styled li {
+            margin-bottom: 10px;
+        }
+
+        .list-styled a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .list-styled a:hover {
+            color: var(--light-green);
+            padding-left: 5px;
+        }
+
 
         @media (max-width: 768px) {
             .product-section {
@@ -192,6 +215,22 @@
             }
         }
     </style>
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.classList.add('collapsed');
+        });
+        
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+
+            if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+                navbarCollapse.classList.remove('show');
+                navbarToggler.classList.add('collapsed');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -202,7 +241,7 @@
                 <img src="/assests/images/logo.png" alt="ReubeTrade Logo" width="50" height="50" class="me-2">
                 ReubeTrade Commodities
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -279,7 +318,7 @@
 
                         <li>
                             <i class="fas fa-map-marker-alt me-2"></i>
-Affiliate Partner Address: 3 Lisa Street, Brampton, L6T 4A2, Ontario, Canada.
+Affiliate Partner Address3 Lisa Street, Brampton, L6T 4A2, Ontario, Canada.
                         </li>
                 <div class="col-md-6 col-lg-3">
                     <h5 class="mb-3">Quick Links</h5>

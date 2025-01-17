@@ -32,7 +32,7 @@
             padding-top: 76px;
         }
 
-        .navbar-custom {
+           .navbar-custom {
             background-color: #90EE90;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -51,6 +51,18 @@
         .navbar-custom .navbar-brand {
             color: var(--primary-green) !important;
             font-weight: bold;
+        }
+
+        .navbar-toggler {
+            transition: opacity 0.3s ease;
+        }
+
+        .navbar-toggler.collapsed {
+            opacity: 1;
+        }
+
+        .navbar-toggler:not(.collapsed) {
+            opacity: 0;
         }
 
         .terms-content {
@@ -128,6 +140,22 @@
             background-color: var(--secondary-green);
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.classList.add('collapsed');
+        });
+
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+
+            if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+                navbarCollapse.classList.remove('show');
+                navbarToggler.classList.add('collapsed');
+            }
+        });
+    </script>
 </head>
 
 <body>

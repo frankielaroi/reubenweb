@@ -183,6 +183,12 @@
             }
         });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }
+    </script>
 </head>
 
 <body>
@@ -219,65 +225,64 @@
         <div class="container">
             <h1>Contact Us</h1>
             <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
-            <form id="contactForm" method="post" action="https://formspree.io/f/xyzzvpnn">
-                <h4 class="mb-4">To Place Your Order? Kindly Fill Out The Form Below:</h4>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="companyName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="companyName" name="companyName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="country" class="form-label">Country</label>
-                        <input type="text" class="form-control" id="country" name="country" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="email" class="form-label">E-Mail Address</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="commodityType" class="form-label">Commodity Type</label>
-                        <select class="form-select" id="commodityType" name="commodityType" required>
-                            <option value="">Select Commodity</option>
-                            <option value="corn">Yellow Maize (GMO & Non-GMO)</option>
-                            <option value="cashew">Cashew Nuts</option>
-                            <option value="soybean">Soybean</option>
-                            <option value="sugar">Sugar (ICUMSA 45)</option>
-                            <option value="rice">Rice</option>
-                            <option value="shea">Shea Butter</option>
-                            <option value="minerals">Metals and Minerals</option>
-                            <option value="energy">Energy Sources</option>
-                            <option value="industrial">Industrial Machinery</option>
-                        </select>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <label for="quantity" class="form-label">Quantity Required</label>
-                        <input type="text" class="form-control" id="quantity" name="quantity" required>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="deliveryTerm" class="form-label">Delivery Term</label>
-                        <input type="text" class="form-control" id="deliveryTerm" name="deliveryTerm" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <div class="col-12 text-center ">
-                        <button type="submit" class="btn btn-submit g-recaptcha"
-                        data-sitekey="6Ldr3cEqAAAAAKRxaCoNqCkEOH5U5dj0a2qjeFWA" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit Inquiry</button>
-                    </div>
-                </div>
-            </form>
+           <form id="contactForm" method="post" action="https://formspree.io/f/xyzzvpnn">
+    <h4 class="mb-4">To Place Your Order? Kindly Fill Out The Form Below:</h4>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="col-md-6">
+            <label for="companyName" class="form-label">Company Name</label>
+            <input type="text" class="form-control" id="companyName" name="companyName" required>
+        </div>
+        <div class="col-md-6">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country" name="country" required>
+        </div>
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">E-Mail Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-md-6">
+            <label for="commodityType" class="form-label">Commodity Type</label>
+            <select class="form-select" id="commodityType" name="commodityType" required>
+                <option value="">Select Commodity</option>
+                <option value="corn">Yellow Maize (GMO & Non-GMO)</option>
+                <option value="cashew">Cashew Nuts</option>
+                <option value="soybean">Soybean</option>
+                <option value="sugar">Sugar (ICUMSA 45)</option>
+                <option value="rice">Rice</option>
+                <option value="shea">Shea Butter</option>
+                <option value="minerals">Metals and Minerals</option>
+                <option value="energy">Energy Sources</option>
+                <option value="industrial">Industrial Machinery</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="quantity" class="form-label">Quantity Required</label>
+            <input type="text" class="form-control" id="quantity" name="quantity" required>
+        </div>
+        <div class="col-md-12">
+            <label for="deliveryTerm" class="form-label">Delivery Term</label>
+            <input type="text" class="form-control" id="deliveryTerm" name="deliveryTerm" required>
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+            <div class="g-recaptcha" data-sitekey="6Ldr3cEqAAAAAKRxaCoNqCkEOH5U5dj0a2qjeFWA"></div>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-submit">Submit Inquiry</button>
+        </div>
+    </div>
+</form>
         </div>
     <section class="contact-section">
         <div class="container">

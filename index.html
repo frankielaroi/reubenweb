@@ -77,12 +77,11 @@
         .hero-section {
             background: url('./assests/images/hero.jpeg');
             min-height: 100vh;
-            width: 100dvw;
-            color:green;
-            background-size:100vmax;
+            width: 100%;
+            color: green;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -293,10 +292,12 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center" data-aos="fade-up">
-            <h1 class="display-4 mb-4">Your Passport to Global Commodities
-</h1>
-            <p class="lead mb-4">Your trusted partner in international commodities trading</p>
+        <div class="container text-center position-relative" data-aos="fade-up"></div>
+            <img src="/assests/images/hero.jpeg" alt="Hero background" class="img-fluid w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; z-index: -1;">
+            <div class="position-relative text-white p-5">
+                <h1 class="display-4 mb-4 text-success">Your Passport to Global Commodities</h1>
+                <p class="lead mb-4 text-success">Your trusted partner in international commodities trading</p>
+            </div>
         </div>
     </section>
 

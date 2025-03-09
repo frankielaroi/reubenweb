@@ -75,7 +75,7 @@
         }
 
         .hero-section {
-            background: url('./assests/images/hero.jpeg');
+            /* background: url('./assests/images/hero.jpeg'); */
             min-height: 100vh;
             width: 100%;
             color: green;
@@ -85,7 +85,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: -56px;
+            margin-top: 1dvh;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
@@ -292,11 +292,15 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center position-relative my-4 py-5" data-aos="fade-up"></div>
-            <img src="/assests/images/hero.jpeg" alt="Hero background" class="img-fluid w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; z-index: -1;">
-            <div class="position-relative text-white p-5">
-                <h1 class="display-4 mb-4 text-success">Your Passport to Global Commodities</h1>
-                <p class="lead mb-4 text-success">Your trusted partner in international commodities trading</p>
+        <div class="container my-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="/assests/images/hero.jpeg" alt="Hero image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 text-start" data-aos="fade-left">
+                    <h1 class="display-4 mb-4 text-success">Your Passport to Global Commodities</h1>
+                    <p class="lead mb-4 text-success">Your trusted partner in international commodities trading</p>
+                </div>
             </div>
         </div>
     </section>

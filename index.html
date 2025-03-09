@@ -75,10 +75,10 @@
         }
 
         .hero-section {
-            /* background: url('./assests/images/hero.jpeg'); */
+             /* background: linear-gradient(rgb(118, 240, 118),rgb(108, 231, 96)); */
             min-height: 100vh;
             width: 100%;
-            color: green;
+            color: rgb(239, 240, 239);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -292,14 +292,26 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container my-4 py-5">
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <img src="/assests/images/hero.jpeg" alt="Hero image" class="img-fluid rounded">
+        <div class="container my-5 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="position-relative">
+                        <img src="/assests/images/hero.jpeg" alt="Hero image" 
+                            class="img-fluid rounded-4 shadow-lg" 
+                            style="object-fit: cover; height: 500px; width: 100%;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-success opacity-25 rounded-4"></div>
+                    </div>
                 </div>
-                <div class="col-md-6 text-start" data-aos="fade-left">
-                    <h1 class="display-4 mb-4 text-success">Your Passport to Global Commodities</h1>
-                    <p class="lead mb-4 text-success">Your trusted partner in international commodities trading</p>
+                <div class="col-lg-6 bg-success rounded-4  bg-opacity-70 shadow-lg" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                    <div class="p-4 "></div>
+                        <h1 class="display-4 fw-bold mb-4 text-white">
+                            Your Passport to Global Commodities
+                        </h1>
+                        <p class="lead mb-4 text-white"></p>
+                            Your trusted partner in international commodities trading, delivering excellence across continents.
+                        </p>
+                    
+                    </div>
                 </div>
             </div>
         </div>
